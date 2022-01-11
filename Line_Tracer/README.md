@@ -9,7 +9,7 @@
 ## 회로도
  1. Arduino Uno
  2. two IR Sensors
- 3. 1 Motor Driver
+ 3. 1 Motor Driver (L9110S)
  4. 2 DC Motors
 ![Slide2](https://user-images.githubusercontent.com/24961970/148902551-f3e8a0b5-aafa-4eeb-98ef-435de450f566.jpg)
 
