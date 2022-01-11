@@ -7,9 +7,9 @@
 
 
 ## 회로도
-![Slide2](https://user-images.githubusercontent.com/24961970/148902551-f3e8a0b5-aafa-4eeb-98ef-435de450f566.jpg)
-
  1. Arduino Uno
  2. two IR Sensors
  3. 1 Motor Driver
  4. 2 DC Motors
+![Slide2](https://user-images.githubusercontent.com/24961970/148902551-f3e8a0b5-aafa-4eeb-98ef-435de450f566.jpg)
+
