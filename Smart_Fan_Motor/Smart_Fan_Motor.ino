@@ -1,4 +1,4 @@
-//thermo meter + lcd display + conditional pan
+//thermo meter + lcd display + conditional fan
 #include "DHT.h"
 #include <LiquidCrystal_I2C.h>
 #include <SoftwareSerial.h>
@@ -39,11 +39,11 @@ void loop() {
     char c=BT_Serial.read();
     value = value + c;
   }
-  if( value.length() > 0 ) {
-      if( value == "forward") threshold_temperature = threshold_temperature + 1.0;
-      else if( value == "reverse") threshold_temperature = threshold_temperature - 1.0;
-      else if( value == "right")   motor_speed += 10;
-      else if( value == "left")    motor_speed -= 10;
+  if(value.length() > 0 ) {
+      if(value == "forward") threshold_temperature = threshold_temperature + 1.0;
+      else if(value == "reverse") threshold_temperature = threshold_temperature - 1.0;
+      else if(value == "right")   motor_speed += 10;
+      else if(value == "left")    motor_speed -= 10;
       value ="";
   }
   float humidity = dht.readHumidity();
@@ -68,9 +68,9 @@ void loop() {
   String temp = "temp: ";
   temp += (String)temperature;
   temp+="C";
-  if( temperature > threshold_temperature) 
+  if(temperature > threshold_temperature) 
     temp += ">";
-  else if ( temperature < threshold_temperature)
+  else if (temperature < threshold_temperature)
     temp += "<";
   else
     temp += "=";
